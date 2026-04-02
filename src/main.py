@@ -22,10 +22,8 @@ while True:
     if len(boxes) > 0:
         print("Human detected!")
         ser.write(b'1')  # Human detected
-        time.sleep(1)
     else:
-        ser.write(b'0')  # No human
-        time.sleep(1)
+        ser.write(b'0')  # No human detected  
 
 
     cv2.imshow("Frame", frame)
