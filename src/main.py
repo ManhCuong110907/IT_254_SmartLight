@@ -21,8 +21,9 @@ while True:
 
     if len(boxes) > 0:
         print("Human detected!")
-        ser.write(b'1')  # Human detected
+        ser.write(b'1')  # Human detected 
     else:
+        print("No human detected.")
         ser.write(b'0')  # No human detected  
 
 
