@@ -17,7 +17,7 @@ while True:
         break
 
     # Run YOLO detection
-    results = model(frame, stream=True)
+    results = model(frame, stream=True, classes=[0])
 
     human_detected = False
 

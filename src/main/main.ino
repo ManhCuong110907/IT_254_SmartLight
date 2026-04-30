@@ -25,7 +25,7 @@ void loop() {
     digitalWrite(humanPin, HIGH);
     delay(500);
     if (photoRegValue < 200) {
-      analogWrite(ledPin, 255);  // full ON
+      analogWrite(ledPin, 255);  // ON
     } else {
       analogWrite(ledPin, PWMValue); // dim
     }
@@ -33,7 +33,7 @@ void loop() {
   } else {
     digitalWrite(humanPin, LOW);
     delay(500);
-    if (photoRegValue > 900) {
+    if (photoRegValue > 700) {
       analogWrite(ledPin, 0);  // OFF
     } else {
       analogWrite(ledPin, PWMValue); // dim
